@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Calculator</title>
+    <link rel="stylesheet" href="../src/cla.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tax Calculator</h1>
+        <div class="input-group">
+            <label for="income">Gross Annual Income:</label>
+            <input type="number" id="income" required>
+        </div>
+        <div class="input-group">
+            <label for="extraIncome">Extra Income:</label>
+            <input type="number" id="extraIncome" required>
+        </div>
+        <div class="input-group">
+            <label for="age">Age:</label>
+            <input type="number" id="age" required>
+        </div>
+        <div class="input-group">
+            <label for="deductions">Total Deductions:</label>
+            <input type="number" id="deductions" required>
+        </div>
+        <button onclick="calculateTax()">Calculate Tax</button>
+        <div id="result"></div>
+    </div>
+    <script src="../src/cla.js"></script>
+</body>
+</html>
